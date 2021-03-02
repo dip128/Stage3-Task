@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enter Job Data</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JOBHOUSE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <form action="#" method="post" onsubmit="return checkDate()" >
+        <div class="container p-3">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><mark>*</mark>Title</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Title" required>
+            </div>
+        
+            <div class="mb-3">
+                <label for="types" class="form-label"><mark>*</mark> the type:</label>
+        
+                <select id="types" class="form-control" required>
+                    <option value="Full time">Full time</option>
+                    <option value="Part Time">Part Time</option>
+                    <option value="Internship">Internship</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="department" class="form-label"><mark>*</mark>Enter Departments:</label>
+        
+                <select id="department" class="form-control" required>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Operation">Operation</option>
+                    <option value="Account">Account</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="country" class="form-label"><mark>*</mark>Enter the Country:</label>
+        
+                <select id="country" class="form-control" required>
+                    <option value="India">India</option>
+                    <option value="US">US</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+       
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"><mark>*</mark>Descroption</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="date" class="form-label"><mark>*</mark>Date</label>
+                <input type="date" class="form-control" id="date"  required>
+            </div>
+
+            <div class="btn-group mb-3">
+                <button type="submit" class="btn btn-outline-primary m-2 p-2">Submit</button>
+                <button type="reset" class="btn btn-outline-danger m-2 p-2">Reset</button>
+            </div>
+    
+        </div>
+    </form>
+    
+
+<footer class="bg-dark text-center text-lg-start">
+    <div class="container-fluid"> 
+    <div class="text-center p-4" style="background-color: rgba(10, 10, 10, 0.2);">
+       <p style="color: rgba(238, 228, 228, 0.2);">© 2020 Copyright: Diptom Saha</p> 
+    </div>
+</footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
