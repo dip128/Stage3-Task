@@ -31,8 +31,9 @@ public class MessagePublisher implements Subject {
 
 	@Override
 	public void changeState(State st,Message m) {
+		//System.out.println("State is "+st.getState());
 		st.setState(!st.getState());
-		
+		//System.out.println("State is "+st.getState());
 		for(Observer o: observers) {
 			o.statemsg(m);
 		}
